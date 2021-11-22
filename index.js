@@ -18,90 +18,55 @@ clear.addEventListener("click", () => {
 //Avec les touches du clavier
 
 document.addEventListener("keypress", (e) => {
-  if (e.key === "0") {
-    result.textContent += 0;
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === "1") {
-    result.textContent += 1;
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === "2") {
-    result.textContent += 2;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "3") {
-    result.textContent += 3;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "4") {
-    result.textContent += 4;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "5") {
-    result.textContent += 5;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "6") {
-    result.textContent += 6;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "7") {
-    result.textContent += 7;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "8") {
-    result.textContent += 8;
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "9") {
-    result.textContent += 9;
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === ".") {
-    result.textContent += ".";
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === "+") {
-    result.textContent += "+";
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === "-") {
-    result.textContent += "-";
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === "/") {
-    result.textContent += "/";
-  }
-});
-document.addEventListener("keypress", (e) => {
-  if (e.key === "*") {
-    result.textContent += "*";
-  }
-});
-
-document.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    result.textContent = eval(result.textContent);
+  switch (e.key) {
+    case "0":
+      result.textContent += 0;
+      break;
+    case "1":
+      result.textContent += 1;
+      break;
+    case "2":
+      result.textContent += 2;
+      break;
+    case "3":
+      result.textContent += 3;
+      break;
+    case "4":
+      result.textContent += 4;
+      break;
+    case "5":
+      result.textContent += 5;
+      break;
+    case "6":
+      result.textContent += 6;
+      break;
+    case "7":
+      result.textContent += 7;
+      break;
+    case "8":
+      result.textContent += 8;
+      break;
+    case "9":
+      result.textContent += 9;
+      break;
+    case "-":
+      result.textContent += "-";
+      break;
+    case "+":
+      result.textContent += "+";
+      break;
+    case "*":
+      result.textContent += "*";
+      break;
+    case "/":
+      result.textContent += "/";
+      break;
+    case ".":
+      result.textContent += ".";
+      break;
+    case "Enter":
+      result.textContent = eval(result.textContent);
+      break;
   }
 });
 
